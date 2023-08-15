@@ -15,6 +15,7 @@ BB_DISKMON_DIRS ??= "\
 PACKAGECONFIG:append:pn-qemu-system-native = " sdl"
 CONF_VERSION = "2"
 
+IMAGE_INSTALL:append = " kernel-modules"
 KERNEL_DEVICETREE:append = " overlays/mcp2517fd.dtbo"
 RPI_EXTRA_CONFIG = "\
 dtparam=spi=on \n \
